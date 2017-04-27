@@ -1,9 +1,11 @@
-package pl.aaronrose.bj.sleeptick;
+package pl.aaronrose.bj.sleeptick.Other;
 
 import android.content.Context;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import pl.aaronrose.bj.sleeptick.R;
 
 
 public class SelectionOption {

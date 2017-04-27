@@ -1,8 +1,10 @@
-package pl.aaronrose.bj.sleeptick;
+package pl.aaronrose.bj.sleeptick.Other;
 
 import android.content.Context;
 import android.media.MediaPlayer;
 import android.os.Vibrator;
+
+import pl.aaronrose.bj.sleeptick.R;
 
 //Klasa odpowiedzialna za obsługę alarmu
 public class Alarm {

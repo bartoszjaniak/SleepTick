@@ -1,4 +1,4 @@
-package pl.aaronrose.bj.sleeptick;
+package pl.aaronrose.bj.sleeptick.models;
 
 /**
  * Created by BJ on 08.04.2016.

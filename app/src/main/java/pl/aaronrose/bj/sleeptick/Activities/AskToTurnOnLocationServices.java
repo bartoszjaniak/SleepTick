@@ -1,4 +1,4 @@
-package pl.aaronrose.bj.sleeptick;
+package pl.aaronrose.bj.sleeptick.Activities;
 
 import android.content.Intent;
 import android.provider.Settings;
@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import pl.aaronrose.bj.sleeptick.R;
 
 //Aktywność sprawdziająca czy włączona jest usługa lokalizacji
 //Jeśli nie jest to prosi użytkownika o włączenie

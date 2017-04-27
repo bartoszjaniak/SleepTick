@@ -1,4 +1,4 @@
-package pl.aaronrose.bj.sleeptick;
+package pl.aaronrose.bj.sleeptick.Activities;
 
 import android.app.Activity;
 
@@ -20,6 +20,10 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+import pl.aaronrose.bj.sleeptick.Other.SelectionOption;
+import pl.aaronrose.bj.sleeptick.R;
+import pl.aaronrose.bj.sleeptick.models.Destination;
 
 public class SettingTheDestination extends AppCompatActivity {
 

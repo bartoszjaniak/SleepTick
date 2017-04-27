@@ -1,4 +1,4 @@
-package pl.aaronrose.bj.sleeptick;
+package pl.aaronrose.bj.sleeptick.Activities;
 
 
 import android.annotation.TargetApi;
@@ -28,7 +28,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.Random;
+import pl.aaronrose.bj.sleeptick.Other.Alarm;
+import pl.aaronrose.bj.sleeptick.R;
+import pl.aaronrose.bj.sleeptick.models.Destination;
 //TODO zmienić parametry lokalizacji - oszczędność baterii
 //TODO ogarnij ten kod kurwa!!
 

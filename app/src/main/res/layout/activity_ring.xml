@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="pl.aaronrose.bj.sleeptick.Ring"
+    tools:context="pl.aaronrose.bj.sleeptick.Activities.Ring"
     >
 <ImageView
     android:layout_width="match_parent"

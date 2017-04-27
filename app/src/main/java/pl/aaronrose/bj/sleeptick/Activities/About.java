@@ -1,4 +1,4 @@
-package pl.aaronrose.bj.sleeptick;
+package pl.aaronrose.bj.sleeptick.Activities;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 
 import java.net.URI;
+
+import pl.aaronrose.bj.sleeptick.R;
+
 //Aktywność About
 public class About extends AppCompatActivity {
 

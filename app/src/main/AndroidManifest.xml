@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
-            android:name=".SettingTheDestination"
+            android:name=".Activities.SettingTheDestination"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,13 +26,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".About"
+            android:name=".Activities.About"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".AlarmActive"
+            android:name=".Activities.AlarmActive"
             android:screenOrientation="portrait" />
-        <activity android:name=".Ring" />
-        <activity android:name=".AskToTurnOnLocationServices"></activity>
+        <activity android:name=".Activities.Ring" />
+        <activity android:name=".Activities.AskToTurnOnLocationServices"></activity>
     </application>
 
 </manifest>
