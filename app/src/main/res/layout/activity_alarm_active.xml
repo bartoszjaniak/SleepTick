@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".AlarmActive">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/naglowek"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_gravity="top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:gravity="right">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/eco"
+                android:src="@drawable/eco"
+                android:onClick="ecoInfo"
+                android:layout_gravity="right"
+                android:scaleType="fitEnd"
+                android:layout_marginRight="15dp"
+                android:adjustViewBounds="true"
+                android:visibility="visible" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/celownik"
+                android:src="@drawable/celownik"
+                android:onClick="dokladnoscInfo"
+                android:layout_marginRight="15dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+
+        <ImageView
+          android:layout_width="200dp"
+          android:layout_height="200dp"
+          android:id="@+id/miasteczko"
+          android:src="@drawable/miasto_cel"
+          android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/city_name"
+            android:text="Cel podróży"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textAlignment="center"
+            android:textStyle="bold|italic" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/blue"
+            >
+
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:id="@+id/wakeUp"
+                android:background="#7affffff"
+                android:src="@drawable/alarm_icon"
+                android:layout_alignBottom="@+id/distance"
+                android:adjustViewBounds="false"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitStart"
+                android:cropToPadding="false"
+                android:padding="5dp" />
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:id="@+id/progress"
+                android:background="@color/black"
+                android:layout_alignBottom="@+id/distance" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text="Oczekiwanie na lokalizację"
+                android:textColor="@color/white"
+                android:textSize="27dp"
+                android:textAlignment="gravity"
+                android:gravity="center_vertical|center_horizontal"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="false"
+                android:id="@+id/distance" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:id="@+id/status"/>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zatrzymaj_alarm"
+        android:id="@+id/stop_alarm"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="bottom"
+        android:adjustViewBounds="true"
+        android:onClick="stopAlarm"
+        android:scaleType="fitXY" />
+
+
+
+
+</FrameLayout>

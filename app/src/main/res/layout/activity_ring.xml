@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pl.aaronrose.bj.sleeptick.Ring"
+    >
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/alarm_background"
+    android:scaleType="fitXY"
+    android:id="@+id/imageView" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zatrzymaj alarm"
+        android:id="@+id/button"
+        android:onClick="stopAlarm"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageView"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Dojeżdżasz do"
+        android:id="@+id/textView2"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_above="@+id/cityNameRing"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Miasto"
+        android:id="@+id/cityNameRing"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_above="@+id/dystansRing"
+        android:layout_alignParentRight="true"
+        android:textAlignment="center"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="xx km"
+        android:id="@+id/dystansRing"
+        android:textColor="#f8a527"
+        android:textSize="35dp"
+        android:layout_above="@+id/button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:textAlignment="center" />
+</RelativeLayout>

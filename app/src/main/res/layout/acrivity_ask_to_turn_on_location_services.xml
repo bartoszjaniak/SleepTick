@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AskToTurnOnLocationServices"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/black"
+        android:text="Lokalizacja jest wyłączona"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25dp"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/localization"
+        android:id="@+id/imageView2"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Aby aplikacja działała poprawnie, musisz włączyć lokalizację"
+        android:id="@+id/textView4"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center" />
+</LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wlacz_lokalizacje"
+        android:id="@+id/turn_on_location_services"
+        android:layout_gravity="bottom"
+        android:adjustViewBounds="true" />
+</FrameLayout>

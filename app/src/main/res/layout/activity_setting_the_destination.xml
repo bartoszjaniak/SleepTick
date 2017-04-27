@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".SettingTheDestination">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+<ImageView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/naglowek_cel"
+    android:onClick="toAboutClick"
+    android:scaleType="fitXY"
+    android:adjustViewBounds="true"
+    android:layout_gravity="top" />
+<!--
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:src="@drawable/punkt_docelowy"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="left" /> -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:weightSum="1">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/poleMiasto"
+            android:hint="@string/city_hint"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black"
+            android:layout_marginRight="10dp"
+            android:maxLines="1"
+            android:textColorHint="#6f6f6f"
+            android:textSize="25dp"
+            android:layout_weight="0.35"
+
+            android:textStyle="italic"
+            android:backgroundTintMode="src_over" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/lupa"
+                android:id="@+id/lupka"
+                android:onClick="onSearchClick"
+                android:scaleType="fitStart"
+                android:background="@color/white" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l1"
+            android:onClick="zaznaczenie"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/miasto_ikona"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/t1"
+                android:text="Nazwa miasta"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:layout_gravity="center_vertical|right"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l2"
+            android:onClick="zaznaczenie"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/miasto_ikona"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"  />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/t2"
+                android:text="Wrocław"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l3"
+            android:onClick="zaznaczenie"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/miasto_ikona"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"  />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/t3"
+                android:text="Kraków"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/l4"
+            android:onClick="zaznaczenie"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/miasto_ikona"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"  />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/t4"
+                android:text="Białystok"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true" />
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:layout_marginTop="20dp">
+
+
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/dystansTekst"
+    android:text="Obudź mnie 20 km przed celem"
+    android:textColor="@color/black"
+    android:gravity="center"
+    android:textSize="20dp"
+    android:textAlignment="center" />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dystansSeekBar"
+        android:progress="20"
+        android:progressBackgroundTint="@color/black"
+        android:progressTint="@color/blue"
+        android:splitTrack="false"
+        android:thumbTint="@color/blue"
+        android:layout_marginTop="10dp" />
+</LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ustaw_cel"
+        android:src="@drawable/ustaw_alarm"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:onClick="toNavigateClick"
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>

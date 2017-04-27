@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SleepTick</string>
+    <string name="city_hint">Miejscowość</string>
+    <string name="about">SleepTick jest aplikacją dzięki której nie musisz się już martwić że przypadkiem przejedziesz swoją stację lub przystanek. Obudzi Cię gdy będziesz dojeżdżać do celu swojej podróży, a Ty w tym czasie możesz się spokojnie zdrzemnąć. Słodkich snów ;)</string>
+    <string name="link">http://doSomething.pl</string>
+</resources>
